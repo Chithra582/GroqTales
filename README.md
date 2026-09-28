@@ -15,6 +15,12 @@
   <a href="https://discord.gg/JK29FZRm"><img src="https://img.shields.io/discord/1245696768829601812?label=Discord&logo=discord&style=flat-square" alt="Discord"/></a>
 </p>
 <p align="center">
+  <a href="https://opengap.org"><img src="https://img.shields.io/badge/OpenGAP-0.1.0-blue.svg?style=flat-square" alt="OpenGAP 0.1.0"></a>
+  <a href="https://app.hidevs.xyz/passport"><img src="https://img.shields.io/badge/GitAgent%20Passport-Ready-emerald.svg?style=flat-square" alt="GitAgent Passport Ready"></a>
+  <img src="https://img.shields.io/badge/Category-Developer%20Tools-purple.svg?style=flat-square" alt="Category Developer Tools">
+  <img src="https://img.shields.io/badge/Compliance-FERPA%20%7C%20GDPR-green.svg?style=flat-square" alt="Compliance FERPA | GDPR">
+</p>
+<p align="center">
   <img src="https://img.shields.io/badge/SWOC'26-Open%20Source-orange?style=flat-square" alt="SWOC'26"/>
   <img src="https://img.shields.io/badge/OSGC'26-Open%20Source-purple?style=flat-square" alt="OSGC'26"/>
   <img src="https://img.shields.io/badge/ECWOC'26-Open%20Source-ff69b4?style=flat-square" alt="ECWOC'26"/>
@@ -42,6 +48,23 @@
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=600&color=F97316&center=true&vCenter=true&width=800&lines=---+AI-powered+Web3+Storytelling+on+the+Monad+Blockchain+---" alt="Animated Divider" />
 </p>
+
+---
+
+## 🤖 GitAgent Passport Qualification
+
+This repository is certified compliant with the **OpenGAP Specification 0.1.0** standard for autonomous agents and passes all three clearance checkpoints of the **HiDevs GitAgent Passport** pipeline:
+
+- **Checkpoint 1 (Validate):** Fully specified agent metadata in [`agent.yaml`](agent.yaml) conforming to OpenGAP 0.1.0 standard schema (Category: `Developer Tools`, Data Classification: `internal`, Risk Tier: `standard`).
+- **Checkpoint 2 (Explain):** Cognitive architecture, narrative scoring formulas, character consistency metrics, and compliance mappings documented in [`EXPLAINABILITY.md`](EXPLAINABILITY.md) across all four required sections.
+- **Checkpoint 3 (Export):** Comprehensive operational rules, duties, persona, skills, and OpenAPI-style tools:
+  - **Core Contract:** [`agent.yaml`](agent.yaml)
+  - **Persona & Values:** [`SOUL.md`](SOUL.md)
+  - **Behavioral Directives:** [`RULES.md`](RULES.md)
+  - **Operational Duties:** [`DUTIES.md`](DUTIES.md)
+  - **Explainability & Architecture:** [`EXPLAINABILITY.md`](EXPLAINABILITY.md)
+  - **Modular Skills:** [`skills/narrative-branching-generator/SKILL.md`](skills/narrative-branching-generator/SKILL.md), [`skills/comic-storyboard-sequencer/SKILL.md`](skills/comic-storyboard-sequencer/SKILL.md), [`skills/character-consistency-tracker/SKILL.md`](skills/character-consistency-tracker/SKILL.md), [`skills/monad-nft-minting-orchestrator/SKILL.md`](skills/monad-nft-minting-orchestrator/SKILL.md)
+  - **Tool Specifications:** [`tools/narrative-engine-client.yaml`](tools/narrative-engine-client.yaml), [`tools/comic-panel-generator.yaml`](tools/comic-panel-generator.yaml), [`tools/character-profile-manager.yaml`](tools/character-profile-manager.yaml), [`tools/nft-contract-deployer.yaml`](tools/nft-contract-deployer.yaml)
 
 ---
 

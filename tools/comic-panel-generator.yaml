@@ -1,0 +1,28 @@
+name: comic-panel-generator
+description: Synthesizes visual panel prompts, speech bubbles, and camera perspectives for generative artwork diffusion pipelines.
+parameters:
+  type: object
+  properties:
+    scene_description:
+      type: string
+      description: Detailed narrative description of the panel event.
+    camera_angle:
+      type: string
+      enum:
+        - wide_shot
+        - medium_shot
+        - close_up
+        - extreme_close_up
+        - birds_eye
+        - dutch_angle
+      default: medium_shot
+      description: Cinematographic framing for the panel.
+    dialogue_text:
+      type: string
+      description: Spoken dialogue or narrative caption within the panel.
+    art_style:
+      type: string
+      default: western_comic
+      description: Visual art style descriptor.
+  required:
+    - scene_description

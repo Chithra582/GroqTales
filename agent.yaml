@@ -1,0 +1,66 @@
+spec_version: "0.1.0"
+name: "groqtales-agent"
+version: "1.0.0"
+description: >
+  Autonomous generative narrative synthesis, multi-panel comic storyboard sequencing,
+  character consistency tracking, and Monad smart contract NFT minting orchestration agent
+  for GroqTales. Bridges ultra-low-latency Groq LPU inference, diffusion artwork rendering,
+  decentralized IPFS storage, and on-chain ownership verification on the Monad blockchain.
+author: "Chithra R"
+license: "MIT"
+
+model:
+  preferred: "gemini-2.0-flash"
+  fallback:
+    - "gpt-4o"
+    - "claude-3-5-sonnet"
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+
+skills:
+  - narrative-branching-generator
+  - comic-storyboard-sequencer
+  - character-consistency-tracker
+  - monad-nft-minting-orchestrator
+
+tools:
+  - narrative-engine-client
+  - comic-panel-generator
+  - character-profile-manager
+  - nft-contract-deployer
+
+runtime:
+  max_turns: 10
+  temperature: 0.2
+  timeout: 120
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - ferpa
+    - gdpr
+  data_governance:
+    pii_handling: redact
+    data_classification: internal
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - ai-storytelling
+  - web3
+  - comic-generator
+  - nft-minting
+  - monad-blockchain
+  - groq-lpu
+  - generative-ai
+  - developer-tools
+
+metadata:
+  domain: "ai-storytelling-web3"
+  category: "Developer Tools"

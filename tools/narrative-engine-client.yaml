@@ -1,0 +1,29 @@
+name: narrative-engine-client
+description: Dispatches structured prompts to high-throughput Groq inference endpoints to generate coherent storytelling passages.
+parameters:
+  type: object
+  properties:
+    premise:
+      type: string
+      description: Core narrative premise or scenario conflict.
+    genre:
+      type: string
+      enum:
+        - scifi
+        - fantasy
+        - cyberpunk
+        - mystery
+        - slice_of_life
+        - horror
+      description: Target genre and thematic tone.
+    target_word_count:
+      type: integer
+      default: 500
+      description: Target length of the generated story segment.
+    branching_enabled:
+      type: boolean
+      default: true
+      description: Whether to append interactive choice branches to the chapter.
+  required:
+    - premise
+    - genre

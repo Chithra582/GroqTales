@@ -1,0 +1,29 @@
+name: nft-contract-deployer
+description: Prepares OpenSea/EIP-721 compliant metadata JSON, pins assets to IPFS, and triggers Monad blockchain minting routines.
+parameters:
+  type: object
+  properties:
+    story_id:
+      type: string
+      description: Internal ID of the story or comic.
+    title:
+      type: string
+      description: Title of the NFT comic or story.
+    creator_wallet:
+      type: string
+      description: Recipient wallet address on the Monad network.
+    royalty_bps:
+      type: integer
+      default: 500
+      description: Royalty in basis points (500 = 5%).
+    monad_network:
+      type: string
+      enum:
+        - monad-testnet
+        - monad-mainnet
+      default: monad-testnet
+      description: Target Monad blockchain network.
+  required:
+    - story_id
+    - title
+    - creator_wallet

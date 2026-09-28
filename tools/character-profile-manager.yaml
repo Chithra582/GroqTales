@@ -1,0 +1,31 @@
+name: character-profile-manager
+description: Registers, updates, and queries canonical character attributes, visual styles, and relational histories.
+parameters:
+  type: object
+  properties:
+    action:
+      type: string
+      enum:
+        - register
+        - query
+        - update
+      description: Action to execute on the character store.
+    character_id:
+      type: string
+      description: Unique identifier for the character.
+    name:
+      type: string
+      description: Character name.
+    phenotypic_traits:
+      type: object
+      properties:
+        eye_color:
+          type: string
+        hair_style:
+          type: string
+        signature_clothing:
+          type: string
+      description: Core visual markers.
+  required:
+    - action
+    - character_id
